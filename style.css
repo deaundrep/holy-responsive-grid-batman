@@ -67,3 +67,68 @@
   /* grid-area: ftr; */
   background-color: #f08a4b;
 }
+
+@media (min-width: 601px) and (max-width: 800px){
+  #app {
+    display: grid;
+    height: 1000px;
+    grid-template-columns: 15% 60% 25%;
+    grid-template-rows: 20% 30% 30% 20%;
+    font-size: 5em;
+    text-align: center;
+  }
+}
+
+#header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
+  /* or, instead of the above two lines */
+  /* we could use grid areas:  */
+  /* grid-area: hdr; */
+  background-color: #f3ca40;
+}
+
+#nav {
+  grid-row: 2 / 2;
+  grid-column: 1/ 4;
+  /* or, instead of the above two lines */
+  /* we could use grid areas:  */
+  /* grid-area: nav; */
+  background-color: #4b4e6d;
+}
+
+#article-1 {
+  grid-row: 3 / 4;
+  grid-column: 1 / 4;
+  /* or, instead of the above two lines */
+  /* we could use grid areas:  */
+  /* grid-area: ar1; */
+  background-color: #6a8d92;
+}
+
+#article-2 {
+  grid-row: 4 / 4;
+  grid-column: 1 / 4;
+  /* or, instead of the above two lines */
+  /* we could use grid areas:  */
+  /* grid-area: ar2; */
+  background-color: cornflowerblue;
+}
+
+#ads {
+  grid-row: 5 / 5;
+  grid-column: 1 / 4;
+  /* or, instead of the above two lines */
+  /* we could use grid areas:  */
+  /* grid-area: ads; */
+  background-color: #f2a541;
+}
+
+#footer {
+  grid-column: 1 / 4;
+  grid-row: 6 / 6;
+  /* or, instead of the above two lines */
+  /* we could use grid areas:  */
+  /* grid-area: ftr; */
+  background-color: #f08a4b;
+}
